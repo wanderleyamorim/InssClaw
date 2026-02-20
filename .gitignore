@@ -1,0 +1,16 @@
+# Ocultar o banco de dados local com as vetorizações
+chroma_db/
+
+# Ocultar os PDFs originais sensíveis
+pdfs/
+
+# Pastas nativas do Python
+__pycache__/
+*.pyc
+
+# Ocultar chaves e variáveis de ambiente, se houver
+.env
+
+# Ignorar ambientes virtuais (caso crie um no futuro)
+venv/
+env/
