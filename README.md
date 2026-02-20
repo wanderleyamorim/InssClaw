@@ -12,7 +12,14 @@
 
 A arquitetura do INSSClaw foi desenhada sob a premissa de **Zero Trust** com provedores externos de IA. Nossos principais mecanismos de segurança são:
 
-### 1. Modelo de IA Local (Ollama)
+### 1. Motor Nativo (Agente Antigravity)
+
+Diferente de frameworks como ZeroClaw ou OpenClaw (que são programados inteiramente do zero em Rust ou TypeScript), o INSSClaw usa a arquitetura do **Antigravity** como seu "Gateway" principal. O agente Antigravity já reside na máquina local, dominando operações essenciais como navegação web e visão computacional, isentando o projeto da necessidade de um aplicativo compilado complexo e pesado.
+
+- **Comportamento (Markdown):** A inteligência de negócios (ex: geração de Despachos, Automação do Salweb) é ditada através de arquivos passivos _Markdown_(`.md`). O agente lê as cartilhas em português e automaticamente herda as "Skills" sem necessitar compilar código-fonte duro.
+- **Força Bruta (Python):** Ferramentas matemáticas, banco de dados vetoriais (ChromaDB) e ofuscação de strings (PII) foram escritas puramente na linguagem de dados **Python**, permitindo processamento assíncrono super-rápido isolado das rotinas comportamentais.
+
+### 2. Modelo de IA Local (Ollama)
 
 O ambiente ideal e arquitetura primordial deste projeto preveem o uso de modelos hospedados **100% localmente via [Ollama](https://ollama.com/)**. Isso assegura que nenhum trecho de texto saia do computador institucional, eliminando qualquer chance de vazamento de dados de Segurados para a nuvem.
 
