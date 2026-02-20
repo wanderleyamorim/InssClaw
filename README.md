@@ -1,6 +1,6 @@
 # INSSClaw 🦅 - Assistente Local de IA
 
-**INSSClaw** é um framework personalizado de Agente de Inteligência Artificial focado no fluxo de trabalho e rotinas de um servidor do INSS. Inspirado em arquiteturas descentralizadas e seguras (como ZeroClaw, IronClaw e AgentZero), este projeto traz o poder analítico da IA para o terminal local do servidor, agilizando tarefas repetitivas, pesquisa legislativa e formulação de despachos.
+**INSSClaw** é um framework personalizado de Agente de Inteligência Artificial focado no fluxo de trabalho e rotinas de um servidor do INSS. Inspirado em arquiteturas descentralizadas e seguras (como OpenClaw, ZeroClaw, IronClaw e AgentZero), este projeto traz o poder analítico da IA para o terminal local do servidor, agilizando tarefas repetitivas, pesquisa legislativa e formulação de despachos.
 
 ⚠️ **DISCLAIMER OFICIAL E RESPONSABILIDADE DOS DADOS** ⚠️
 
@@ -25,8 +25,8 @@ A IA em nuvem processa os tokens falsos, e somente ao encerramento a inteligênc
 ## ⚙️ Funcionalidades Internas
 
 - **Memória Infinita de Legislação (RAG Local):** Um hub com banco de dados vetorial (ChromaDB) acoplado, permitindo que milhares de PDFs (INs, Portarias, Leis) fiquem guardados localmente. O Agente é capaz de ler milhares de páginas em segundos para localizar a fundamentação legal correta e entregar um resumo referenciado.
-- **Automação Nível-Navegador:** Abandono da antiga dependência de extensões de Firefox. O agente opera automação de cliques (Browser Subagent / Playwright) simulando o servidor e preenchendo as planilhas complexas nos sistemas (SABI / PMF / Salweb) sem interação de terceiros.
-- **Despachos Limpos (Texto Puro):** Fim dos enfeites de "Markdown", títulos e listas gerados por IAs que quebram formatações. O Output System do INSSClaw gera blocos de texto puro, projetados exclusivamente para o Ctrl+C e Ctrl+V direto no PMF/SGI.
+- **Automação Nível-Navegador:** Abandono da antiga dependência de extensões de Firefox. O agente opera automação de cliques (Browser Subagent / Playwright) simulando o servidor e preenchendo as planilhas complexas nos sistemas externos ao INSS (Busca CRM, Salweb, etc), sem interação de terceiros.
+- **Despachos Limpos (Texto Puro):** Fim dos enfeites de "Markdown", títulos e listas gerados por IAs que quebram formatações. O Output System do INSSClaw gera blocos de texto puro, projetados exclusivamente para o Ctrl+C e Ctrl+V direto no SIDEP.
 
 ## 📁 Estrutura de Diretórios e Ocultamento
 
@@ -39,4 +39,4 @@ Os dados privados **NÃO fazem parte deste repositório**. Nosso `.gitignore` re
 
 ---
 
-_Inspirado nas melhores práticas globais de construção de Agentes IA (Store Concepts: OpenClaw, NanoClaw e IronClaw Sandbox). Feito de servidor para servidor, focado no Brasil._
+_Inspirado nas melhores práticas globais de construção de Agentes IA (Store Concepts: OpenClaw, NanoClaw e IronClaw Sandbox). Feito de servidor para servidor, focado em segurança e privacidade._
